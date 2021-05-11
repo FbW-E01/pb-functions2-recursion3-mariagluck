@@ -15,7 +15,7 @@
 function fibonacci(n){
     if (n <= 0) {
         return [0];
-    } else if (n <= 1) 
+    } else if (n === 1) 
     {
         return [0, 1];
     }
@@ -32,6 +32,8 @@ function fibonacci(n){
 console.log(fibonacci(0))   //=> [0]
 console.log(fibonacci(1))   //=> [0,1]
 console.log(fibonacci(2))   //=> [0,1,1]
+console.log(fibonacci(3))   //=> [0,1,1,2]
+console.log(fibonacci(4))   //=> [0,1,1,2,3]
 console.log(fibonacci(8))   //=> [0, 1, 1, 2, 3, 5, 8, 13,21]
 console.log(fibonacci(9))  //=>  [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]  
 console.log(fibonacci(10))  //=>  [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]  
